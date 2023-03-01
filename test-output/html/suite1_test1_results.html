@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/reportngClass.css" rel="stylesheet" />
+  <script type="text/javascript" src="js/reportngClass.js"></script>
+  <script type="text/javascript" src="js/jquery-1.4.4.min.js"></script> 
+  <script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+  <script type="text/javascript" src="js/json-min.js"></script>
+  <script type="text/javascript">
+	$(document).ready(function(){
+		$('.tablesorter').tablesorter({sortList: [[0,0]]});
+	});
+  </script>
+</head>
+<body onload="doParse(); return false;" onkeypress="collapseExpand();">
+<div class="well well-large">
+	<b>Test Info</>
+	<table class="table">
+	  <tr>
+	    <th>Test Name : </th>
+	    <th>Test</th> 
+	  </tr>
+	  <tr>
+	    <th>Test Class : </th>
+	    <th>tests.FirstTest</th> 
+	  </tr>
+	  <tr>
+	    <th>Suite Name : </th>
+	    <th>Suite</th> 
+	  </tr>
+	  <tr>
+	    <th>Suite XML : </th>
+	    <th>C:\Users\hp\eclipse-workspace-2\AppiumDemo\testng.xml</th> 
+	  </tr>
+	  	  <tr>
+	    <th>Total Time : </th>
+	    <th>00:01:17</th> 
+	  </tr>
+	  <tr>
+	    <th>Total Steps : </th>
+	    <th>18</th> 
+	  </tr>
+	  <tr>
+	    <th>Status : </th>
+	    <th><font color="red">FAIL</font></th> 
+	  </tr>
+	</table>
+</div>
+<div class="well well-large">
+	<div class="row">
+		<div class="col-xs-12">
+	        <div class="text-right">
+	            <button id="hideResults" type="button" class="btn-danger" onclick="collapseExpand(this);" onkeypress="collapseExpand(this);" class="btn pull-right" title="Click or Press Any key to collapse/expand All Failed Tests and Configuration Methods">Show Only Failures</button>
+	        </div>
+	    </div>
+	</div>
+	<table class="tablesorter" border="1">
+		<thead>
+		<tr>
+		<th class="headerTime">Time</th>
+		<th class="headerTime" width="12%">Info</th>
+		<th class="headerTime" width="88%">Test</th>
+		</tr>
+		</thead>
+		<tbody>
+		
+				
+				
+												
+											<tr>
+	<td class="time">1672722446013</td>
+	<td class="header failed" colspan="4">
+	<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>tests.FirstTest</div>
+	<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-7e59300a-84ce-460a-a0df-a1b10cd4ac0b' class="glyphicon glyphicon-menu-down"></span></div>
+	</td>
+	</tr>
+<tr>
+	<td class="time">1672722446013</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>Test12</span><br>
+			<span class="description"><b>Description: </b>Tap on PickLocations</span><br>
+				<span class="description"><b>Priority: </b><font color='blue'>12</font></span><br>
+						<span class="duration"><b>Duration: </b>10.504s</span><br>
+	</td>
+	<td class="result">
+						<div class="noCollapse" id="7e59300a-84ce-460a-a0df-a1b10cd4ac0b" style="display: block;">
+						<a href="javascript:toggleElement('exception-7e59300a-84ce-460a-a0df-a1b10cd4ac0b','block')" title="Click to expand/collapse"><b>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.id: com.android.packageinstaller:id/permission_allow_button (tried for 10 second(s) with 500 milliseconds interval)</b></a><br/>
+		<div class="stackTrace" id="exception-7e59300a-84ce-460a-a0df-a1b10cd4ac0b">
+					org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)<br/>
+					org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)<br/>
+					pages.OrderCreatePage.AllowAccessBtn(OrderCreatePage.java:24)<br/>
+					tests.FirstTest.Test12(FirstTest.java:173)<br/>
+					java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>
+					java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br/>
+					java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br/>
+					java.base/java.lang.reflect.Method.invoke(Method.java:566)<br/>
+					org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)<br/>
+					org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)<br/>
+					org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)<br/>
+					org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)<br/>
+					org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)<br/>
+					org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)<br/>
+					org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br/>
+					org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)<br/>
+					java.base/java.util.ArrayList.forEach(ArrayList.java:1541)<br/>
+					org.testng.TestRunner.privateRun(TestRunner.java:794)<br/>
+					org.testng.TestRunner.run(TestRunner.java:596)<br/>
+					org.testng.SuiteRunner.runTest(SuiteRunner.java:377)<br/>
+					org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)<br/>
+					org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)<br/>
+					org.testng.SuiteRunner.run(SuiteRunner.java:276)<br/>
+					org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br/>
+					org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)<br/>
+					org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)<br/>
+					org.testng.TestNG.runSuitesLocally(TestNG.java:1134)<br/>
+					org.testng.TestNG.runSuites(TestNG.java:1063)<br/>
+					org.testng.TestNG.run(TestNG.java:1031)<br/>
+					org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br/>
+					org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br/>
+					org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br/>
+							<b>Caused by: </b> <a href="javascript:toggleElement('causedBy-7e59300a-84ce-460a-a0df-a1b10cd4ac0b','block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.<br/>
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;<br/>
+System info: host: &apos;DESKTOP-HQ5STS1&apos;, ip: &apos;192.168.8.197&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.13&apos;<br/>
+Driver info: io.appium.java_client.android.AndroidDriver<br/>
+Capabilities {app: C:\Users\hp\eclipse-workspa..., appPackage: com.apps.ac.martin.coffeesh..., automationName: Appium, databaseEnabled: false, desired: {app: C:\Users\hp\eclipse-workspa..., automationName: Appium, deviceName: Android Emulator, platformName: android, platformVersion: 11}, deviceApiLevel: 30, deviceManufacturer: Google, deviceModel: sdk_gphone_x86, deviceName: emulator-5554, deviceScreenDensity: 440, deviceScreenSize: 1080x2280, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 135, takesScreenshot: true, viewportRect: {height: 1842, left: 0, top: 135, width: 1080}, warnings: {}, webStorageEnabled: false}<br/>
+Session ID: 8cf59650-37b6-4bd2-a7e8-b55a48da91d8<br/>
+*** Element info: {Using=id, value=com.android.packageinstaller:id/permission_allow_button}</a><br/>
+			<div class="stackTrace" id="causedBy-7e59300a-84ce-460a-a0df-a1b10cd4ac0b">
+							jdk.internal.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)<br/>
+							java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br/>
+							java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)<br/>
+							org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br/>
+							org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br/>
+							org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br/>
+							org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br/>
+							io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)<br/>
+							org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br/>
+							io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)<br/>
+							io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)<br/>
+							io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)<br/>
+							org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)<br/>
+							io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)<br/>
+							io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)<br/>
+							io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)<br/>
+							org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)<br/>
+							io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:70)<br/>
+							io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)<br/>
+							io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)<br/>
+							org.openqa.selenium.By$ById.findElement(By.java:188)<br/>
+							org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)<br/>
+							io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)<br/>
+							io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)<br/>
+							io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)<br/>
+							org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)<br/>
+							org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)<br/>
+							org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)<br/>
+							org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)<br/>
+							org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)<br/>
+							pages.OrderCreatePage.AllowAccessBtn(OrderCreatePage.java:24)<br/>
+							tests.FirstTest.Test12(FirstTest.java:173)<br/>
+							java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>
+							java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br/>
+							java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br/>
+							java.base/java.lang.reflect.Method.invoke(Method.java:566)<br/>
+							org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)<br/>
+							org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)<br/>
+							org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)<br/>
+							org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)<br/>
+							org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)<br/>
+							org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)<br/>
+							org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br/>
+							org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)<br/>
+							java.base/java.util.ArrayList.forEach(ArrayList.java:1541)<br/>
+							org.testng.TestRunner.privateRun(TestRunner.java:794)<br/>
+							org.testng.TestRunner.run(TestRunner.java:596)<br/>
+							org.testng.SuiteRunner.runTest(SuiteRunner.java:377)<br/>
+							org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)<br/>
+							org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)<br/>
+							org.testng.SuiteRunner.run(SuiteRunner.java:276)<br/>
+							org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br/>
+							org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)<br/>
+							org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)<br/>
+							org.testng.TestNG.runSuitesLocally(TestNG.java:1134)<br/>
+							org.testng.TestNG.runSuites(TestNG.java:1063)<br/>
+							org.testng.TestNG.run(TestNG.java:1031)<br/>
+							org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br/>
+							org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br/>
+							org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br/>
+						</div>
+				</div>
+		</td>
+	</div>
+</tr>
+						
+				
+												<tr>
+			<td class="time">1672722472330</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('e83775e9-29cd-48a3-8fac-d66ded1e9d5e','block');changeSingleIcon('span-e83775e9-29cd-48a3-8fac-d66ded1e9d5e');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>tests.FirstTest</div>
+			<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-e83775e9-29cd-48a3-8fac-d66ded1e9d5e' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1672722472330</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>Test14</span><br>
+			<span class="description"><b>Description: </b>Change Payment method to 'Cash' and Confirm order</span><br>
+				<span class="description"><b>Priority: </b><font color='blue'>14</font></span><br>
+						<span class="duration"><b>Duration: </b>0.869s</span><br>
+	</td>
+	<td class="result">
+						<div class="stackTrace" id="e83775e9-29cd-48a3-8fac-d66ded1e9d5e" style="display: block;">
+					</td>
+	</div>
+</tr>
+						<tr>
+			<td class="time">1672722441433</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('f0ca165a-0da4-4f29-8f74-1c2ca1217ac8','block');changeSingleIcon('span-f0ca165a-0da4-4f29-8f74-1c2ca1217ac8');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>tests.FirstTest</div>
+			<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-f0ca165a-0da4-4f29-8f74-1c2ca1217ac8' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1672722441433</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>Test7</span><br>
+			<span class="description"><b>Description: </b>Go to 'Snacks'</span><br>
+				<span class="description"><b>Priority: </b><font color='blue'>7</font></span><br>
+						<span class="duration"><b>Duration: </b>0.796s</span><br>
+	</td>
+	<td class="result">
+						<div class="stackTrace" id="f0ca165a-0da4-4f29-8f74-1c2ca1217ac8" style="display: block;">
+					</td>
+	</div>
+</tr>
+						<tr>
+			<td class="time">1672722431333</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('09a2f7c7-4474-4d8b-8e6b-2fce8d96c5ca','block');changeSingleIcon('span-09a2f7c7-4474-4d8b-8e6b-2fce8d96c5ca');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>tests.FirstTest</div>
+			<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-09a2f7c7-4474-4d8b-8e6b-2fce8d96c5ca' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1672722431333</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>Test5</span><br>
+			<span class="description"><b>Description: </b>Scroll down and click on 'Chocolate smoothie'</span><br>
+				<span class="description"><b>Priority: </b><font color='blue'>5</font></span><br>
+						<span class="duration"><b>Duration: </b>6.496s</span><br>
+	</td>
+	<td class="result">
+						<div class="stackTrace" id="09a2f7c7-4474-4d8b-8e6b-2fce8d96c5ca" style="display: block;">
+					</td>
+	</div>
+</tr>
+						<tr>
+			<td class="time">1672722475653</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('78ad701a-e5dc-4d6e-b55d-1928a1436ee6','block');changeSingleIcon('span-78ad701a-e5dc-4d6e-b55d-1928a1436ee6');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>tests.FirstTest</div>
+			<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-78ad701a-e5dc-4d6e-b55d-1928a1436ee6' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1672722475653</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>Test16</span><br>
+			<span class="description"><b>Description: </b>Navigate to 'Orders' and tap on 'View Details'</span><br>
+				<span class="description"><b>Priority: </b><font color='blue'>16</font></span><br>
+						<span class="duration"><b>Duration: </b>2.128s</span><br>
+	</td>
+	<td class="result">
+						<div class="stackTrace" id="78ad701a-e5dc-4d6e-b55d-1928a1436ee6" style="display: block;">
+					</td>
+	</div>
+</tr>
+						<tr>
+			<td class="time">1672722425145</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('acd6a8a4-ccfc-477d-a72a-fa8124e34ef4','block');changeSingleIcon('span-acd6a8a4-ccfc-477d-a72a-fa8124e34ef4');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>tests.FirstTest</div>
+			<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-acd6a8a4-ccfc-477d-a72a-fa8124e34ef4' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1672722425145</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>Test3</span><br>
+			<span class="description"><b>Description: </b>Navigate to settings and switch to Dark mode theme</span><br>
+				<span class="description"><b>Priority: </b><font color='blue'>3</font></span><br>
+						<span class="duration"><b>Duration: </b>6.036s</span><br>
+	</td>
+	<td class="result">
+						<div class="stackTrace" id="acd6a8a4-ccfc-477d-a72a-fa8124e34ef4" style="display: block;">
+					</td>
+	</div>
+</tr>
+						<tr>
+			<td class="time">1672722444639</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('bb24a45b-6372-46cc-8933-4d1104ee1e1c','block');changeSingleIcon('span-bb24a45b-6372-46cc-8933-4d1104ee1e1c');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>tests.FirstTest</div>
+			<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-bb24a45b-6372-46cc-8933-4d1104ee1e1c' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1672722444639</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>Test9</span><br>
+			<span class="description"><b>Description: </b>Go to 'Search' and enter the text 'Pancakes'</span><br>
+				<span class="description"><b>Priority: </b><font color='blue'>9</font></span><br>
+						<span class="duration"><b>Duration: </b>0.001s</span><br>
+	</td>
+	<td class="result">
+						<div class="stackTrace" id="bb24a45b-6372-46cc-8933-4d1104ee1e1c" style="display: block;">
+					</td>
+	</div>
+</tr>
+						<tr>
+			<td class="time">1672722477783</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('87d33f41-19c4-4d65-88fe-2a64892aa6e3','block');changeSingleIcon('span-87d33f41-19c4-4d65-88fe-2a64892aa6e3');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>tests.FirstTest</div>
+			<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-87d33f41-19c4-4d65-88fe-2a64892aa6e3' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1672722477783</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>Test17</span><br>
+			<span class="description"><b>Description: </b>Scroll down and Cancel the order</span><br>
+				<span class="description"><b>Priority: </b><font color='blue'>17</font></span><br>
+						<span class="duration"><b>Duration: </b>3.811s</span><br>
+	</td>
+	<td class="result">
+						<div class="stackTrace" id="87d33f41-19c4-4d65-88fe-2a64892aa6e3" style="display: block;">
+					</td>
+	</div>
+</tr>
+						<tr>
+			<td class="time">1672722424216</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('912ea42e-54ef-41f4-a5e6-35abb1233663','block');changeSingleIcon('span-912ea42e-54ef-41f4-a5e6-35abb1233663');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>tests.FirstTest</div>
+			<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-912ea42e-54ef-41f4-a5e6-35abb1233663' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1672722424216</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>Test2</span><br>
+			<span class="description"><b>Description: </b>Verify 'Cofee Shop App' title visibility on the home screen</span><br>
+				<span class="description"><b>Priority: </b><font color='blue'>2</font></span><br>
+						<span class="duration"><b>Duration: </b>0.927s</span><br>
+	</td>
+	<td class="result">
+						<div class="stackTrace" id="912ea42e-54ef-41f4-a5e6-35abb1233663" style="display: block;">
+					</td>
+	</div>
+</tr>
+						<tr>
+			<td class="time">1672722456520</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('810f26d8-7853-41df-b8a6-6e1323887a1f','block');changeSingleIcon('span-810f26d8-7853-41df-b8a6-6e1323887a1f');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>tests.FirstTest</div>
+			<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-810f26d8-7853-41df-b8a6-6e1323887a1f' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1672722456520</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>Test13</span><br>
+			<span class="description"><b>Description: </b>Provide user details</span><br>
+				<span class="description"><b>Priority: </b><font color='blue'>13</font></span><br>
+						<span class="duration"><b>Duration: </b>15.810s</span><br>
+	</td>
+	<td class="result">
+						<div class="stackTrace" id="810f26d8-7853-41df-b8a6-6e1323887a1f" style="display: block;">
+					</td>
+	</div>
+</tr>
+						<tr>
+			<td class="time">1672722442230</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('ac6ac8b2-0a0a-476e-9083-3d1bcb804439','block');changeSingleIcon('span-ac6ac8b2-0a0a-476e-9083-3d1bcb804439');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>tests.FirstTest</div>
+			<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-ac6ac8b2-0a0a-476e-9083-3d1bcb804439' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1672722442230</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>Test8</span><br>
+			<span class="description"><b>Description: </b>Scroll Up to the top of the screen</span><br>
+				<span class="description"><b>Priority: </b><font color='blue'>8</font></span><br>
+						<span class="duration"><b>Duration: </b>2.408s</span><br>
+	</td>
+	<td class="result">
+						<div class="stackTrace" id="ac6ac8b2-0a0a-476e-9083-3d1bcb804439" style="display: block;">
+					</td>
+	</div>
+</tr>
+						<tr>
+			<td class="time">1672722473200</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('12e38d04-e773-4394-9219-f157a582fe93','block');changeSingleIcon('span-12e38d04-e773-4394-9219-f157a582fe93');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>tests.FirstTest</div>
+			<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-12e38d04-e773-4394-9219-f157a582fe93' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1672722473200</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>Test15</span><br>
+			<span class="description"><b>Description: </b>Back to home</span><br>
+				<span class="description"><b>Priority: </b><font color='blue'>15</font></span><br>
+						<span class="duration"><b>Duration: </b>2.451s</span><br>
+	</td>
+	<td class="result">
+						<div class="stackTrace" id="12e38d04-e773-4394-9219-f157a582fe93" style="display: block;">
+					</td>
+	</div>
+</tr>
+						<tr>
+			<td class="time">1672722444640</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('fde2d652-b04a-4e15-89b6-7e570a9176c6','block');changeSingleIcon('span-fde2d652-b04a-4e15-89b6-7e570a9176c6');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>tests.FirstTest</div>
+			<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-fde2d652-b04a-4e15-89b6-7e570a9176c6' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1672722444640</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>Test10</span><br>
+			<span class="description"><b>Description: </b>Go to the Checkout list and verify the total amount</span><br>
+				<span class="description"><b>Priority: </b><font color='blue'>10</font></span><br>
+						<span class="duration"><b>Duration: </b>1.137s</span><br>
+	</td>
+	<td class="result">
+						<div class="stackTrace" id="fde2d652-b04a-4e15-89b6-7e570a9176c6" style="display: block;">
+					</td>
+	</div>
+</tr>
+						<tr>
+			<td class="time">1672722423136</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('b557e4ed-d9b8-4301-b3a7-e89f41518aeb','block');changeSingleIcon('span-b557e4ed-d9b8-4301-b3a7-e89f41518aeb');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>tests.FirstTest</div>
+			<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-b557e4ed-d9b8-4301-b3a7-e89f41518aeb' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1672722423136</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>Test1</span><br>
+			<span class="description"><b>Description: </b>Accept the warning</span><br>
+				<span class="description"><b>Priority: </b><font color='blue'>1</font></span><br>
+						<span class="duration"><b>Duration: </b>1.075s</span><br>
+	</td>
+	<td class="result">
+						<div class="stackTrace" id="b557e4ed-d9b8-4301-b3a7-e89f41518aeb" style="display: block;">
+					</td>
+	</div>
+</tr>
+						<tr>
+			<td class="time">1672722431182</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('ba7e5632-e166-401a-8730-c1acd2541514','block');changeSingleIcon('span-ba7e5632-e166-401a-8730-c1acd2541514');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>tests.FirstTest</div>
+			<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-ba7e5632-e166-401a-8730-c1acd2541514' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1672722431182</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>Test4</span><br>
+			<span class="description"><b>Description: </b>Navigate to the Home page</span><br>
+				<span class="description"><b>Priority: </b><font color='blue'>4</font></span><br>
+						<span class="duration"><b>Duration: </b>0.149s</span><br>
+	</td>
+	<td class="result">
+						<div class="stackTrace" id="ba7e5632-e166-401a-8730-c1acd2541514" style="display: block;">
+					</td>
+	</div>
+</tr>
+						<tr>
+			<td class="time">1672722445777</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('aa3dec4a-cac8-4d17-a451-d56eb019fdfa','block');changeSingleIcon('span-aa3dec4a-cac8-4d17-a451-d56eb019fdfa');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>tests.FirstTest</div>
+			<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-aa3dec4a-cac8-4d17-a451-d56eb019fdfa' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1672722445777</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>Test11</span><br>
+			<span class="description"><b>Description: </b>Tap on Checkout</span><br>
+				<span class="description"><b>Priority: </b><font color='blue'>11</font></span><br>
+						<span class="duration"><b>Duration: </b>0.234s</span><br>
+	</td>
+	<td class="result">
+						<div class="stackTrace" id="aa3dec4a-cac8-4d17-a451-d56eb019fdfa" style="display: block;">
+					</td>
+	</div>
+</tr>
+						<tr>
+			<td class="time">1672722481595</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('b3d5022b-bd35-4c2d-aeb1-47607599245f','block');changeSingleIcon('span-b3d5022b-bd35-4c2d-aeb1-47607599245f');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>tests.FirstTest</div>
+			<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-b3d5022b-bd35-4c2d-aeb1-47607599245f' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1672722481595</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>Test18</span><br>
+			<span class="description"><b>Description: </b>Go Back to orders and verify order status has changed to 'canceled'</span><br>
+				<span class="description"><b>Priority: </b><font color='blue'>18</font></span><br>
+						<span class="duration"><b>Duration: </b>2.207s</span><br>
+	</td>
+	<td class="result">
+						<div class="stackTrace" id="b3d5022b-bd35-4c2d-aeb1-47607599245f" style="display: block;">
+					</td>
+	</div>
+</tr>
+						<tr>
+			<td class="time">1672722437830</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('2fdd3800-4b4b-45e8-9e84-69be6952e209','block');changeSingleIcon('span-2fdd3800-4b4b-45e8-9e84-69be6952e209');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>tests.FirstTest</div>
+			<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-2fdd3800-4b4b-45e8-9e84-69be6952e209' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1672722437830</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>Test6</span><br>
+			<span class="description"><b>Description: </b>Change Quantity to 5 and click on 'Add to order'</span><br>
+				<span class="description"><b>Priority: </b><font color='blue'>6</font></span><br>
+						<span class="duration"><b>Duration: </b>3.601s</span><br>
+	</td>
+	<td class="result">
+						<div class="stackTrace" id="2fdd3800-4b4b-45e8-9e84-69be6952e209" style="display: block;">
+					</td>
+	</div>
+</tr>
+					  
+	</tbody>
+	</table>
+</div>
+</body>
+</html>
